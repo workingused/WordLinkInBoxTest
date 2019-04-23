@@ -35,8 +35,8 @@ namespace WordLinkInBoxTest
         }
 
         [TestMethod]
-        [DataRow("选项", "领英功能1", "取消")]
-        //[DataRow("Options", "Minus")]
+        //[DataRow("选项", "领英功能", "取消")]
+        [DataRow("Options", "LinkedIn Features","Cancel")]
         public void TestLinkInBox(string optionName, string linkinBoxName, string cancelButtonName)
         {
             session.FindElementByName(optionName).Click();
